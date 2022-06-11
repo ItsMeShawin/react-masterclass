@@ -1,20 +1,3 @@
-.navbar-comp {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-
-    width: 100vw;
-    height: 2.5em;
-    border: 1px solid #000;
-    padding-top: 1em;    
-    padding-bottom: 1em;
-}
-
-.menu-item {
-    margin-right: 1em;
-}
-
 a {
     text-decoration: none;
     color: #000;
@@ -24,42 +7,69 @@ a:hover {
     text-decoration: underline;
 }
 
+.navbar-comp {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100vw;
+    height: 2.5em;    
+    padding-top: 1em;    
+    padding-bottom: 1em;
+}
+
+.menu-item {
+    margin-right: 1em;
+}
+
+.icon {
+    width: 70%;
+    height: auto;
+    margin-top: 0.3em;
+}
+
 .avatarPic {
-    height: 2em;
-    width: 2em;
-    border-radius: 2em;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 100%;
 }
 
 .search-zone {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column ;
+    flex-direction: column;
 }
 
 #logo {
-    padding-top: 12em;
+    padding-top: 12em;  
 }
 
 #text-search {
+    display: flex;
     margin-top: 1em;
     width: 40em;
     height: 2.5em;
     border-radius: 5em / 5em;
-    border:  1px solid #aaa;
+    border: 1px solid #e0e0e0;
     flex-flow: row flex-start;
-    justify-content: space-between;
-    padding-top: 1em;
+    justify-content: space-around;
+    padding-top: 0.7em;
 }
 
-.searchBox {
+#text-search:hover {
+    box-shadow: 0em 0.1em 0.4em 0.1em #e0e0e0;
+}
+
+.searchbox {
+    height: 1.8em;
     width: 30em;
-    height: 1.6em;
     border: none;
-    font-size: 16px;
+    font-size: 1em;
 }
 
-.searchBox:focus {
+.searchbox:focus {
     outline: none;
 }
 
@@ -68,10 +78,21 @@ a:hover {
     margin-top: -0.5em;
 }
 
+.voice-icon {
+    width: 1.5em;
+    margin-top: -0.5em;
+}
+
 .search-panel {
     display: flex;
     justify-content: center;
-    padding-top: 3em;
+    padding-top: 1em;
+}
+
+.search-penal-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
 }
 
 .search-btn {    
@@ -89,6 +110,30 @@ a:hover {
 
 .search-btn:hover {
     outline: 0.5px solid #e0e0e0;
-    box-shadow: 0em 0.15em 0.1em 0.05em;
+    box-shadow: 0em 0.15em 0.1em 0.05em #e0e0e0;
 }
 
+.subtext {
+    font-size: 0.85em;
+}
+
+.lang-link {
+    color: #1a0dab;
+    padding-left: 0.5em;
+}
+
+
+.result-panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-container {
+    padding: 2.2em;
+    padding-left: 1.5em;
+}
+
+.logo-sm {
+    width: 70%;
+    height: auto;
+}
